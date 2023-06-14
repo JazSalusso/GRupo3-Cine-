@@ -17,7 +17,10 @@ Audiencia objetivo:
 Nuestro objetivo principal es atraer a los amantes del cine de todas las edades y gustos. Nos dirigimos a aquellos que disfrutan de la emoción de ver películas en la pantalla grande y desean una plataforma conveniente para explorar, seleccionar y comprar entradas para las películas más populares del momento. Nuestra página web está diseñada para satisfacer las necesidades tanto de los jóvenes entusiastas del cine como de los adultos y familias que buscan disfrutar de una experiencia cinematográfica completa.
 
 Links de los sitios que utilizamos como inspiracion:
-Productos: https://www.primevideo.com/offers/nonprimehomepage/ref=dvm_pds_brd_ar_hk_s_g_mkw_sVWs2WfyK-dc_pcrid_645960031813?mrntrk=slid__pgrid_42306243048_pgeo_9041004_x__adext__ptid_kwd-3151046130
-Clientes a los que apuntamos: https://www.todoshowcase.com/
-Estetica: https://www.cinemarkhoyts.com.ar/?gclid=CjwKCAjwp6CkBhB_EiwAlQVyxU3HhaMKHtF1de6e3W0lUaRchnyy9Yn-0rWt4LhDBRT6_XySi5rFoRoCy2wQAvD_BwE
-Funcionalidades: https://www.cinepolis.com.ar/
+*Productos: https://www.primevideo.com/offers/nonprimehomepage/ref=dvm_pds_brd_ar_hk_s_g_mkw_sVWs2WfyK-dc_pcrid_645960031813?mrntrk=slid__pgrid_42306243048_pgeo_9041004_x__adext__ptid_kwd-3151046130
+,
+*Clientes a los que apuntamos: https://www.todoshowcase.com/
+,
+*Estetica: https://www.cinemarkhoyts.com.ar/?gclid=CjwKCAjwp6CkBhB_EiwAlQVyxU3HhaMKHtF1de6e3W0lUaRchnyy9Yn-0rWt4LhDBRT6_XySi5rFoRoCy2wQAvD_BwE
+,
+*Funcionalidades: https://www.cinepolis.com.ar/
