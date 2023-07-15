@@ -20,6 +20,23 @@ app.get('/api/carrito',(req,res)=>{
     res.sendFile(path.join(__dirname, "views", "carrito.html"))
 })
 
+app.get('/api/detalle',(req,res)=>{
+    res.sendFile(path.join(__dirname, "views", "detalle.html"))
+})
+
+app.get('/api/login',(req,res)=>{
+    res.sendFile(path.join(__dirname, "views", "login.html"))
+})
+
+app.get('/api/register',(req,res)=>{
+    res.sendFile(path.join(__dirname, "views", "register.html"))
+})
+
+app.get('/api/carga',(req,res)=>{
+    res.sendFile(path.join(__dirname, "views", "carga.html"))
+})
+
+
 //Server Config
 
 app.listen(port,()=>{
