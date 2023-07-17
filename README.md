@@ -1,4 +1,4 @@
-Participantes (4):
+Participantes (3):
 Maximiliano Brocato; 21 años, Lanus este.
 Jazmin Salusso; 20 años, Villa españa.
 Carlos Braian del Prado; 25 años, 3 de agosto.
