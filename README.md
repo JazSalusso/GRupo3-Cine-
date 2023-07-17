@@ -1,6 +1,5 @@
 Participantes (4):
 Maximiliano Brocato; 21 años, Lanus este.
-Matias Cabrera; 26 años, CABA.
 Jazmin Salusso; 20 años, Villa españa.
 Carlos Braian del Prado; 25 años, 3 de agosto.
 
