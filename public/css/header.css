@@ -43,7 +43,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3px;
+    padding-right: 2px;
 }
 
 /* Barra del menú hamburguesa */
@@ -184,14 +184,6 @@
         display: block; /* Mostrar la barra de búsqueda en la vista de escritorio */
     }
   
-    /* Icono de lupa */
-    .fa-sharp.fa-solid.fa-magnifying-glass {
-      font-size: 1.7em; /* Ajustar el tamaño del icono de lupa al 170% */
-      color: var(--colorNegro);
-      z-index: 1;
-      right: 450px;
-      position: absolute;   
-     }
   
     /* Texto de "MENU" */
     .header-menu-label {
@@ -240,21 +232,18 @@
       margin-left: 20px; /* Ajustar el margen entre el icono de lupa y el texto "MENU" */
     }
   
-    .magnifying-glass-icon {
-      margin-left: 0; /* Eliminar margen izquierdo */
-      margin-right: 20px; /* Ajustar el margen derecho entre el icono de lupa y el menú hamburguesa */
-    }
 
     .header-search {
-        display: block; /* Mostrar la barra de búsqueda en la vista de escritorio */
-        width: 650px; /* Ajustar el ancho de la barra de búsqueda a 650px */
-        height: 60px; /* Ajustar el alto de la barra de búsqueda a 70px */
-        background-color: #FFFFFF; /* Cambiar el color de fondo a blanco */
-        border-radius: 35px; /* Agregar bordes redondeados (la mitad de la altura) */
-        padding: 5px 15px; /* Agregar un poco de espacio interno */
-        margin-right: 100px; /* Ajustar el margen derecho */
-        outline: none; /* Eliminar el borde cuando se selecciona */
-      }
+      display: flex;
+      align-items: center;
+      width: 650px; /* Ajustar el ancho de la barra de búsqueda */
+      height: 60px; /* Ajustar el alto de la barra de búsqueda */
+      background-color: #FFFFFF; /* Cambiar el color de fondo a blanco */
+      border-radius: 35px; /* Agregar bordes redondeados (la mitad de la altura) */
+      padding: 5px 15px; /* Agregar un poco de espacio interno */
+      margin-right: 100px; /* Ajustar el margen derecho */
+      position: relative; /* Establecer la posición relativa para que el icono se posicione con respecto a este contenedor */
+    }
     
       /* Estilo del campo de entrada de texto en la barra de búsqueda */
       .header-search input[type="text"] {
@@ -269,6 +258,22 @@
 
       }
       
+/* Icono de lupa dentro de la barra de búsqueda */
+.header-search .fa-sharp.fa-solid.fa-magnifying-glass {
+  font-size: 1.2em; /* Ajustar el tamaño del icono */
+  color: var(--colorNegro); /* Cambiar el color del icono si lo deseas */
+  position: absolute; /* Establecer la posición absoluta para que el icono se posicione dentro del contenedor de búsqueda */
+  top: 50%;
+  right: 20px; /* Ajustar la posición del icono a la derecha */
+  transform: translateY(-50%);
+  /* Agrega otros estilos que desees para el icono de la lupa */
+}
+
+
+  .header-menu i{
+    display: none;
   }
+}
+  
 
   

@@ -1,0 +1,112 @@
+body {
+    background-color: var(--colorNegro);
+  }
+  
+  .registration-content {
+    background-color: var(--colorNegro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: white;
+  }
+  
+  .titulo-registro {
+    font-weight: bold;
+  }
+  
+  form label {
+    color: white;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"],
+  form select,
+  form input[type="date"] {
+    width: 280px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--colorNegro);
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  form button {
+    width: 100%;
+    height: 60px;
+    background-color: var(--colorAmarillo);
+    border: none;
+    border-radius: 5px;
+    color: var(--colorNegro);
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-section a {
+    text-decoration: none !important;
+}
+
+form select.form-control {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--colorNegro);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.titulo-registro{
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* Flexbox para alinear elementos verticalmente */
+  .registration-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    max-width: 100%;
+    margin: 0 auto; /* Centrar el contenido */
+  }
+
+  /* Títulos encima de las cajas de texto */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* Ajusta este valor según tus preferencias */
+    margin: 0 auto; /* Centrar el contenido */
+  }
+
+  /* Estilos para las etiquetas (títulos) */
+  .form-group label {
+    margin-bottom: 5px;
+  }
+
+  /* Ancho máximo para el formulario */
+  form {
+    max-width: 500px; /* Puedes ajustar este valor según tus preferencias */
+    width: 100%;
+    margin: 0 auto; /* Centrar el contenido */
+  }
+
+  /* Asegurar que el formulario no se desborde */
+  .container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
