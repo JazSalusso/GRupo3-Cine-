@@ -36,7 +36,6 @@ app.get('/api/carga',(req,res)=>{
     res.sendFile(path.join(__dirname, "views", "carga.html"))
 })
 
-
 //Server Config
 
 app.listen(port,()=>{

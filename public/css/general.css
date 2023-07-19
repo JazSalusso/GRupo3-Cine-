@@ -1,3 +1,15 @@
 body{
     background-color: #1F1F1F;
 }
+
+:root {
+    --colorAmarillo: #F5C518;
+    --colorNegro: #1F1F1F;
+    --colorGrisClaro: #B7B7B7;
+    --colorGrisOscuro: #959595;
+  }
+  
+body {
+    font-family: "Inter Bold", sans-serif;
+  }
+  
