@@ -1,13 +1,15 @@
 /* Estilos generales para el footer */
 
-
 .footer-section {
     padding-top: 20px;
     background-color: var(--colorGrisOscuro);
     color: #000000;
     text-decoration: none;
-
+    width: 100%; /* Asegurar que el footer ocupe todo el ancho disponible */
+    box-sizing: border-box; /* Incluir padding y bordes en el ancho total */
+    overflow: hidden; /* Evitar el desbordamiento horizontal */
 }
+
 
 .footer-section a,
 .footer-section a:link,

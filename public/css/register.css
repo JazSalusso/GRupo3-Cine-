@@ -72,8 +72,8 @@ form select.form-control {
   display: none;
 }
 
+/* Estilos para tablets (ancho mínimo de 768px) */
 @media (min-width: 768px) {
-  /* Flexbox para alinear elementos verticalmente */
   .registration-content {
     display: flex;
     flex-direction: column;
@@ -81,32 +81,29 @@ form select.form-control {
     padding: 20px;
     color: white;
     max-width: 100%;
-    margin: 0 auto; /* Centrar el contenido */
+    margin: 0 auto;
   }
 
-  /* Títulos encima de las cajas de texto */
   .form-group {
     display: flex;
     flex-direction: column;
-    max-width: 400px; /* Ajusta este valor según tus preferencias */
-    margin: 0 auto; /* Centrar el contenido */
+    max-width: 400px;
+    margin: 0 auto;
   }
 
-  /* Estilos para las etiquetas (títulos) */
   .form-group label {
     margin-bottom: 5px;
   }
 
-  /* Ancho máximo para el formulario */
   form {
-    max-width: 500px; /* Puedes ajustar este valor según tus preferencias */
+    max-width: 500px;
     width: 100%;
-    margin: 0 auto; /* Centrar el contenido */
+    margin: 0 auto;
   }
 
-  /* Asegurar que el formulario no se desborde */
   .container {
     max-width: 100%;
     overflow-x: hidden;
+    padding-right: 10px; /* Ajuste adicional para prevenir desbordamiento */
   }
 }
