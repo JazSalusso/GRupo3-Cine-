@@ -1,0 +1,173 @@
+.publicidad {
+  display: none;
+}
+
+.login-content h2{
+  color: white;
+}
+
+.login-content h3{
+  color: white;
+}
+
+
+/* Estilos específicos para la página de login */
+.login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.titulo-ingreso {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.subtitulo-usuario,
+.subtitulo-contrasena,
+.titulo-olvide,
+.titulo-no-tienes {
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+
+.login-content button{
+  width: 280px;
+  height: 60px;
+  background-color: var(--colorAmarillo);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* Estilos para el separador */
+.separador {
+  border: none;
+  border-top: 1px solid white;
+  width: 200px;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .titulo-olvide,
+  .titulo-no-tienes {
+    display: block;
+    width: 100%; 
+  }
+}
+
+/* Mediaquerie para tablets y dispositivos más grandes (mínimo 760px) */
+@media (min-width: 760px) {
+
+  .separador {
+    border: none;
+    border-left: 1px solid white; 
+    height: 300px; 
+    margin: 20px 0;
+    margin-left: 15px;
+  }
+
+
+/* Estilos para el contenedor principal */
+.login-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Agrega la siguiente línea para colocar las columnas en posición vertical */
+  flex-direction: row;
+}
+
+.columna-izquierda {
+  /* Agrega el siguiente estilo para alinear los elementos en posición vertical */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.columna-medio {
+  /* Agrega el siguiente estilo para centrar el contenido verticalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 20px;
+}
+
+.columna-derecha {
+  /* Agrega el siguiente estilo para alinear los elementos en posición vertical */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding-bottom: 235px;
+  margin-left: 10px;
+}
+
+}
+
+/* Mediaquerie para tablets y dispositivos más grandes (mínimo 1000px) */
+@media (min-width: 1000px) {
+  .separador {
+    border: none;
+    border-left: 1px solid white; 
+    height: 300px; 
+    margin: 20px 0;
+    margin-left: 15px;
+  }
+
+  /* Estilos para el contenedor principal */
+  .login-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Agrega la siguiente línea para colocar las columnas en posición vertical */
+    flex-direction: row;
+  }
+
+  .columna-izquierda {
+    /* Agrega el siguiente estilo para alinear los elementos en posición vertical */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .columna-medio {
+    /* Agrega el siguiente estilo para centrar el contenido verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 20px;
+  }
+
+  .columna-derecha {
+    /* Agrega el siguiente estilo para alinear los elementos en posición vertical */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding-bottom: 235px;
+    margin-left: 10px;
+  }
+
+  /* Estilos para el espacio de la imagen */
+  .publicidad img {
+    /* Ajusta el ancho y la altura según el tamaño deseado para la imagen */
+    display: block;
+    width: 300px;
+    height: 200px;
+    /* Aquí puedes agregar estilos adicionales para posicionar la imagen adecuadamente */
+    /* Por ejemplo: margin-top: 30px; */
+  }
+}
+

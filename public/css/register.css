@@ -1,109 +1,144 @@
-body {
-    background-color: var(--colorNegro);
-  }
-  
-  .registration-content {
-    background-color: var(--colorNegro);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    color: white;
-  }
-  
-  .titulo-registro {
-    font-weight: bold;
-  }
-  
-  form label {
-    color: white;
-    font-weight: bold;
-  }
-  
-  form input[type="text"],
-  form input[type="email"],
-  form input[type="password"],
-  form select,
-  form input[type="date"] {
-    width: 280px;
-    height: 60px;
-    background-color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    color: var(--colorNegro);
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  form button {
-    width: 100%;
-    height: 60px;
-    background-color: var(--colorAmarillo);
-    border: none;
-    border-radius: 5px;
-    color: var(--colorNegro);
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  a {
-    color: inherit;
-    text-decoration: none;
+.registration-content h3{
+  color: white;
 }
 
-.footer-section a {
-    text-decoration: none !important;
+/* Contenedor principal */
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-form select.form-control {
-  width: 100%;
+/* Registro y contenido del formulario */
+.registration-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--colorFondo);
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Resto de estilos */
+.registration-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-registro {
+  font-weight: bold;
+}
+
+form label {
+  color: white;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select,
+form input[type="date"],
+.form-control {
+  width: 280px;
   height: 60px;
   background-color: white;
   border: none;
   border-radius: 5px;
   padding: 10px;
-  color: var(--colorNegro);
   font-size: 16px;
   margin-bottom: 20px;
 }
 
-.titulo-registro{
+form button {
+  width: 100%;
+  height: 60px;
+  background-color: var(--colorAmarillo);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-section a {
+  text-decoration: none !important;
+}
+
+form select.form-control {
+  width: 300px;
+  height: 80px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.titulo-registro {
   display: none;
 }
 
-/* Estilos para tablets (ancho mínimo de 768px) */
+/* Estilos para tablets y dispositivos más grandes */
 @media (min-width: 768px) {
-  .registration-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  .titulo-registro {
+    display: block;
     color: white;
-    max-width: 100%;
-    margin: 0 auto;
   }
 
-  .form-group {
+
+  /* Alinear los grupos en columnas en tablets y dispositivos más grandes */
+  .form-group-inline {
     display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
-  .form-group label {
-    margin-bottom: 5px;
+  /* Estilos para cada campo dentro de los grupos en tablets y dispositivos más grandes */
+  .form-item {
+    width: 50%;
+    height: 20%;
+    margin-bottom: 20px; /* Ajusta este valor según el espacio deseado entre los campos */
   }
 
-  form {
-    max-width: 500px;
-    width: 100%;
-    margin: 0 auto;
+  /* Alinear los grupos en filas en dispositivos más grandes */
+  .form-group-inline {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  .container {
-    max-width: 100%;
-    overflow-x: hidden;
-    padding-right: 10px; /* Ajuste adicional para prevenir desbordamiento */
+  /* Estilos para cada campo dentro de los grupos en dispositivos más grandes */
+  .form-item {
+    width: calc(48% - 10px); /* Ajusta este valor según el espacio deseado entre los campos */
+    margin-bottom: 30px; /* Ajusta este valor según el espacio deseado entre los campos */
+  }
+
+  /* Ajustar el ancho del campo "email" en dispositivos más grandes */
+  #email {
+    width: calc(102% - 10px); /* Ajusta este valor para el espacio deseado en el campo "email" */
+  }
+
+  /* Espacio entre los botones */
+  .botones-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; /* Ajusta este valor según el espacio deseado entre los botones */
+  }
+  
+
+  form button{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
   }
 }
