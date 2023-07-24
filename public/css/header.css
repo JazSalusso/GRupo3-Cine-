@@ -1,0 +1,279 @@
+/* Estilos generales para el header */
+.header {
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Logo */
+.header-logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 50px;
+}
+
+/* Barra de búsqueda */
+.header-search {
+    display: none;
+}
+
+/* Icono de lupa */
+.fa-sharp.fa-solid.fa-magnifying-glass {
+    font-size: 25px;
+    margin-right: 5px; /* Agregar margen para separar del menú hamburguesa */
+    color: #FFFFFF
+}
+
+/* Texto de "MENU" */
+.header-menu-label {
+    margin-right: 10px; /* Mover hacia el extremo derecho */
+    float: right;
+    font-weight: bold; /* Agregar negritas */
+
+}
+
+/* Menu hamburguesa */
+.header-menu-icon {
+    width: 25px;
+    height: 15px;
+    background-color: var(--colorNegro); /* Cambiar a color negro */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 2px;
+}
+
+/* Barra del menú hamburguesa */
+.menu-bar {
+    width: 100%;
+    height: 3px;
+    background-color: #FFFFFF; /* Cambiar a color blanco */
+    border-radius: 2px; /* Agregar el border-radius para hacer las líneas más redondas */
+
+}
+
+/* Avatar del usuario */
+.header-avatar {
+    margin-left: auto; /* Mover hacia la punta derecha */
+}
+.header-avatar img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+/* Estilos personalizados para la posición */
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu-label {
+    margin-left: 10px; /* Agregar margen entre el icono de lupa y el texto "MENU" */
+}
+
+.magnifying-glass-icon {
+    margin-left: 0; /* Eliminar margen izquierdo */
+    margin-right: 10px; /* Agregar margen derecho entre el icono de lupa y el menú hamburguesa */
+}
+
+@media (min-width: 768px) {
+    /* Estilos generales para el header */
+    .header {
+      background-color: #1F1F1F;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      font-size: 150%; /* Ajustar el tamaño de todos los elementos en un 50% más grande */
+    }
+  
+    /* Logo */
+    .header-logo img {
+      width: 150px; /* Ajustar el tamaño del logo al 150% */
+      height: auto;
+      margin-right: 340px;
+    }
+  
+    /* Barra de búsqueda */
+    .header-search {
+      display: none;
+    }
+  
+    /* Icono de lupa */
+    .fa-sharp.fa-solid.fa-magnifying-glass {
+      font-size: 1.5em; /* Ajustar el tamaño del icono de lupa al 150% */
+      margin-right: 5px; /* Agregar margen para separar del menú hamburguesa */
+    }
+  
+    /* Texto de "MENU" */
+    .header-menu-label {
+      margin-right: 10px; /* Mover hacia el extremo derecho */
+      float: right;
+    }
+  
+    /* Menu hamburguesa */
+    .header-menu-icon {
+      width: 1.5em; /* Ajustar el tamaño del menú hamburguesa al 150% */
+      height: 0.9em; /* Ajustar el tamaño del menú hamburguesa al 150% */
+      background-color: var(--colorNegro); /* Cambiar a color negro */
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 3px;
+    }
+  
+    /* Barra del menú hamburguesa */
+    .menu-bar {
+      width: 100%;
+      height: 5px;
+      background-color: #FFFFFF; /* Cambiar a color blanco */
+      border-radius: 2px; /* Agregar el border-radius para hacer las líneas más redondas */
+    }
+  
+    /* Avatar del usuario */
+    .header-avatar {
+      margin-left: auto; /* Mover hacia la punta derecha */
+    }
+    .header-avatar img {
+      width: 57px; /* Ajustar el tamaño del avatar al 150% */
+      height: 57px;
+      border-radius: 50%;
+    }
+  
+    /* Estilos personalizados para la posición */
+    .header-menu {
+      display: flex;
+      align-items: center;
+    }
+  
+    .header-menu-label {
+      margin-left: 10px; /* Agregar margen entre el icono de lupa y el texto "MENU" */
+    }
+  
+    .magnifying-glass-icon {
+      margin-left: 0; /* Eliminar margen izquierdo */
+      margin-right: 10px; /* Agregar margen derecho entre el icono de lupa y el menú hamburguesa */
+    }
+  }
+  
+@media (min-width: 1024px) {
+    /* Estilos generales para el header */
+    .header {
+      background-color: #1F1F1F;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      font-size: 170%; /* Ajustar el tamaño de todos los elementos en un 70% más grande */
+    }
+  
+    /* Logo */
+    .header-logo img {
+      width: 170px; /* Ajustar el tamaño del logo al 170% */
+      height: auto;
+      margin-right: 150px; /* Ajustar el margen derecho del logo */
+    }
+  
+    /* Barra de búsqueda */
+    .header-search {
+        display: block; /* Mostrar la barra de búsqueda en la vista de escritorio */
+    }
+  
+  
+    /* Texto de "MENU" */
+    .header-menu-label {
+      margin-right: 20px; /* Ajustar el margen derecho del texto "MENU" */
+      float: right;
+    }
+  
+    /* Menu hamburguesa */
+    .header-menu-icon {
+      width: 1.7em; /* Ajustar el tamaño del menú hamburguesa al 170% */
+      height: 1em; /* Ajustar el tamaño del menú hamburguesa al 170% */
+      background-color: var(--colorNegro); /* Cambiar a color negro */
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 3px;
+    }
+  
+    /* Barra del menú hamburguesa */
+    .menu-bar {
+      width: 100%;
+      height: 6px; /* Ajustar el tamaño de las barras al 170% */
+      background-color: #FFFFFF; /* Cambiar a color blanco */
+      border-radius: 2px; /* Agregar el border-radius para hacer las líneas más redondas */
+    }
+  
+    /* Avatar del usuario */
+    .header-avatar {
+      margin-left: auto; /* Mover hacia la punta derecha */
+      margin-right: 20px;
+    }
+    .header-avatar img {
+      width: 66px; /* Ajustar el tamaño del avatar al 170% */
+      height: 66px;
+      border-radius: 50%;
+    }
+  
+    /* Estilos personalizados para la posición */
+    .header-menu {
+      display: flex;
+      align-items: center;
+    }
+  
+    .header-menu-label {
+      margin-left: 20px; /* Ajustar el margen entre el icono de lupa y el texto "MENU" */
+    }
+  
+
+    .header-search {
+      display: flex;
+      align-items: center;
+      width: 650px; /* Ajustar el ancho de la barra de búsqueda */
+      height: 60px; /* Ajustar el alto de la barra de búsqueda */
+      background-color: #FFFFFF; /* Cambiar el color de fondo a blanco */
+      border-radius: 35px; /* Agregar bordes redondeados (la mitad de la altura) */
+      padding: 5px 15px; /* Agregar un poco de espacio interno */
+      margin-right: 100px; /* Ajustar el margen derecho */
+      position: relative; /* Establecer la posición relativa para que el icono se posicione con respecto a este contenedor */
+    }
+    
+      /* Estilo del campo de entrada de texto en la barra de búsqueda */
+      .header-search input[type="text"] {
+        width: 100%; /* Ajustar el ancho del campo de entrada al 100% del contenedor */
+        height: 100%; /* Ajustar el alto del campo de entrada al 100% del contenedor */
+        border: none; /* Eliminar el borde del campo de entrada */
+        background-color: transparent; /* Hacer el fondo del campo de entrada transparente */
+        padding: 0; /* Eliminar el espacio interno del campo de entrada */
+        font-size: 1em; /* Tamaño del texto */
+        color: #1F1F1F; /* Color del texto */
+        outline: none; /* Eliminar el borde cuando se selecciona */
+
+      }
+      
+/* Icono de lupa dentro de la barra de búsqueda */
+.header-search .fa-sharp.fa-solid.fa-magnifying-glass {
+  font-size: 1.2em; /* Ajustar el tamaño del icono */
+  color: var(--colorNegro); /* Cambiar el color del icono si lo deseas */
+  position: absolute; /* Establecer la posición absoluta para que el icono se posicione dentro del contenedor de búsqueda */
+  top: 50%;
+  right: 20px; /* Ajustar la posición del icono a la derecha */
+  transform: translateY(-50%);
+  /* Agrega otros estilos que desees para el icono de la lupa */
+}
+
+
+  .header-menu i{
+    display: none;
+  }
+}
+  
+
+  
