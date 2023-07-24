@@ -36,6 +36,16 @@ app.get('/api/carga',(req,res)=>{
     res.sendFile(path.join(__dirname, "views", "carga.html"))
 })
 
+//rutas para header y footer.html de prueba
+
+app.get('/api/header', (req, res) => {
+    res.sendFile(path.join(__dirname, "views", "partials", "header.html"));
+  });
+  
+  app.get('/api/footer', (req, res) => {
+    res.sendFile(path.join(__dirname, "views", "partials", "footer.html"));
+  });
+
 //Server Config
 
 app.listen(port,()=>{
