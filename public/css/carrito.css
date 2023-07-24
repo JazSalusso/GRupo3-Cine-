@@ -1,5 +1,5 @@
 .carrito-main{
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
 }
 
@@ -127,7 +127,6 @@
     padding-bottom: 5rem;
     
 }
-
 
 
 @media (max-width: 768px) {
