@@ -1,0 +1,97 @@
+
+
+body {
+    background-color:var(--colorNegro);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main_home_banner {
+    display: block;
+}
+
+.main_home_banner img {
+    width: 100%;
+    height: 180px; /* Puedes ajustar la altura aquí si lo deseas */
+}
+
+.main_home h4 {
+    margin: 20px;
+    color: var(--colorGrisClaro);
+    text-transform: uppercase;
+}
+
+.main_home_cartelera,
+.main_home_estrenos,
+.main_home_pestrenos {
+    /* En lugar de repetir las mismas reglas en tres clases diferentes, podemos agruparlas en una sola. */
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.main_home_cartelera img,
+.main_home_estrenos img,
+.main_home_pestrenos img {
+    width: 35%;
+    margin: 10px;
+    height: 36%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 375px) {
+    .main_home_banner img {
+        width: 100%;
+    height: auto;
+    }
+
+    .main_home_cartelera,
+    .main_home_estrenos,
+    .main_home_pestrenos {
+
+        flex-wrap: nowrap;
+    }
+
+
+    .main_home_cartelera img,
+    .main_home_estrenos img,
+    .main_home_pestrenos img {
+margin-top: 30px;
+        width: 20%; 
+        height: auto; 
+    }
+
+    .main_home_estrenos,
+    .main_home_estrenos,
+    .main_home_estrenos {
+
+        flex-wrap: nowrap;
+    }
+
+
+    .main_home_estrenos img,
+    .main_home_estrenos img,
+    .main_home_estrenos img {
+margin-top: 30px;
+        width: 20%; 
+        height: auto; 
+    }
+}
+@media (min-width: 1024px) {
+    .main_home_banner img {
+      width: 100%;
+      height: auto;
+    }
+    .main_home h4{
+        font-size: 20px ;
+    }
+}
