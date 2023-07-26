@@ -54,6 +54,7 @@
 .detalle-main-section-fecha {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap
 }
 
 .detalle-main-section-fecha div {
