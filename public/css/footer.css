@@ -2,7 +2,7 @@
 
 .footer-section {
     padding-top: 20px;
-    background-color: var(--colorGrisOscuro);
+    background-color: var(--colorGrisClaro);
     color: #000000;
     text-decoration: none;
     width: 100%; /* Asegurar que el footer ocupe todo el ancho disponible */
@@ -76,12 +76,17 @@ ul li {
 .social-icon {
     width: 40px;
     height: 40px;
-    background-color: #888484;
+    background-color: var(--colorNegro);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 10px;
+}
+
+.social-icon  i {
+
+   color: var(--colorAmarillo);
 }
 
 .footer-legal {
@@ -206,6 +211,7 @@ a {
         width: 550px;
         height: 270px;
         transform: translateX(250px); /* Ajustamos la posición hacia la izquierda */
+        margin-right: 35px
     }    
 
 

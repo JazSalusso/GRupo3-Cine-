@@ -8,33 +8,39 @@ app.use(express.static('public'));
 
 //Rutas
 
-app.get('/', (req, res) => {
-    res.redirect('/api');
-  });
-
-app.get('/api',(req,res)=>{
+app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname, "views", "home.html"))
 })
 
-app.get('/api/carrito',(req,res)=>{
+app.get('/carrito',(req,res)=>{
     res.sendFile(path.join(__dirname, "views", "carrito.html"))
 })
 
-app.get('/api/detalle',(req,res)=>{
+app.get('/detalle',(req,res)=>{
     res.sendFile(path.join(__dirname, "views", "detalle.html"))
 })
 
-app.get('/api/login',(req,res)=>{
+app.get('/login',(req,res)=>{
     res.sendFile(path.join(__dirname, "views", "login.html"))
 })
 
-app.get('/api/register',(req,res)=>{
+app.get('/register',(req,res)=>{
     res.sendFile(path.join(__dirname, "views", "register.html"))
 })
 
-app.get('/api/carga',(req,res)=>{
+app.get('/carga',(req,res)=>{
     res.sendFile(path.join(__dirname, "views", "carga.html"))
 })
+
+//rutas para header y footer.html de prueba
+
+app.get('/header', (req, res) => {
+    res.sendFile(path.join(__dirname, "views", "partials", "header.html"));
+  });
+  
+  app.get('/footer', (req, res) => {
+    res.sendFile(path.join(__dirname, "views", "partials", "footer.html"));
+  });
 
 //Server Config
 
