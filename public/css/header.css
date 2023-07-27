@@ -169,12 +169,12 @@
       display: flex;
       align-items: center;
       padding: 10px;
-      font-size: 170%; /* Ajustar el tamaño de todos los elementos en un 70% más grande */
+      font-size: 130%; /* Ajustar el tamaño de todos los elementos en un 70% más grande */
     }
   
     /* Logo */
     .header-logo img {
-      width: 170px; /* Ajustar el tamaño del logo al 170% */
+      width: 130px; /* Ajustar el tamaño del logo al 170% */
       height: auto;
       margin-right: 150px; /* Ajustar el margen derecho del logo */
     }
@@ -206,7 +206,7 @@
     /* Barra del menú hamburguesa */
     .menu-bar {
       width: 100%;
-      height: 6px; /* Ajustar el tamaño de las barras al 170% */
+      height: 5px; /* Ajustar el tamaño de las barras al 170% */
       background-color: #FFFFFF; /* Cambiar a color blanco */
       border-radius: 2px; /* Agregar el border-radius para hacer las líneas más redondas */
     }
@@ -217,7 +217,7 @@
       margin-right: 20px;
     }
     .header-avatar img {
-      width: 66px; /* Ajustar el tamaño del avatar al 170% */
+      width: 50px; /* Ajustar el tamaño del avatar al 170% */
       height: 66px;
       border-radius: 50%;
     }
