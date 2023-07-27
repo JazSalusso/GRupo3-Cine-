@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color:var(--colorNegro);
 }
@@ -169,3 +170,16 @@ margin-top: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 }
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hola Mundo Home</h1>
+</body>
+</html>
+>>>>>>> eecdd09b06e3242d7eb6c239f4a02b5b9ea315bd
