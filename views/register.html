@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e4e3620734.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Header</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-logo">
+      <img src="/img/logo.png" alt="Logo">
+    </div>
+    <div class="header-search"> 
+      <input type="text" placeholder="Buscar">
+      <i class="fa-sharp fa-solid fa-magnifying-glass"></i> <!-- cambiar a link de referencia para abrir barra de busquedas -->
+
+      
+    </div>
+    <div class="header-menu">
+      <i class="fa-sharp fa-solid fa-magnifying-glass"></i> </div> <!-- cambiar a link de referencia para abrir barra de busquedas -->
+      <span class="header-menu-label">MENU</span>
+      <div class="header-menu-icon">
+        <div class="menu-bar"></div>
+        <div class="menu-bar"></div>
+        <div class="menu-bar"></div>
+      </div>
+    </div>
+    <a href="/user-profile" class="header-avatar"> <!-- cambiar link de referencia a futura pagina de configuracion de usuario -->
+      <img src="/img/profileDefault.jpg" alt="Avatar">
+    </a>
+  </header>
+  <main class="registration-content">
+    <div class="container">
+      <h2 class="titulo-registro">REGISTRATE Y CREA UN NUEVO USUARIO</h2>
+      <form>
+        <!-- Grupo 1 -->
+        <div class="form-group form-group-inline">
+          <div class="form-item">
+            <h3>Nombre</h3>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+          </div>
+          <div class="form-item">
+            <h3>Apellido</h3>
+            <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" required>
+          </div>
+        </div>
+  
+        <!-- Grupo 2 -->
+        <div class="form-group">
+          <h3>Email</h3>
+          <input type="email" class="form-control" id="email" placeholder="Ingrese su email" required>
+        </div>
+  
+        <!-- Grupo 3 -->
+        <div class="form-group form-group-inline">
+          <div class="form-item">
+            <h3>Contraseña</h3>
+            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
+          </div>
+          <div class="form-item">
+            <h3>Confirmar Contraseña</h3>
+            <input type="password" class="form-control" id="confirmar-password" placeholder="Confirme su contraseña" required>
+          </div>
+        </div>
+  
+        <!-- Grupo 4 -->
+        <div class="form-group form-group-inline">
+          <div class="form-item">
+            <h3>Fecha de Nacimiento</h3>
+            <input type="date" class="form-control" id="fecha-nacimiento" required>
+          </div>
+          <div class="form-item">
+            <h3>Género</h3>
+            <select class="form-control" id="genero" required>
+              <option value="">Seleccione su género</option>
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+        </div>
+  
+        <!-- Grupo 5 -->
+        <div class="form-group form-group-inline">
+          <div class="form-item">
+            <h3>Celular</h3>
+            <input type="text" class="form-control" id="celular" placeholder="Ingrese su número de celular" required>
+          </div>
+          <div class="form-item">
+            <h3>Complejo Habitual</h3>
+            <input type="text" class="form-control" id="complejo-habitual" placeholder="Ingrese su complejo habitual" required>
+          </div>
+        </div>
+  
+        <!-- Botón de registro -->
+        <button type="submit" class="btn btn-primary">Registrarme</button>
+      </form>
+    </div>
+  </main>
+  
+  
+  
+
+  <footer class="footer-section" style="background-color: var(--colorGrisClaro); color: #000000;">
+    <div class="footer-grid">
+        <div class="footer-item footer-image">
+            <a href="insertar link del mapa"><img src="/img/placeholder.png" alt="Map Image"></a>
+        </div>
+        <div class="footer-item footer-cartelera">
+            <h3 class="footer-title1">CARTELERA</h3>
+            <div class="footer-lists">
+                <ul>
+                    <li><a href="insertar link de estrenos"><u>ESTRENOS</u></a></li>
+                    <li><a href="insertar link de ventas"><u>VENTAS</u></a></li>
+                    <li><a href="insertar link de anticipadas"><u>ANTICIPADAS</u></a></li>
+                    <li><a href="insertar link de peliculas 2d"><u>PELICULAS 2D</u></a></li>
+                    <li><a href="insertar link de peliculas 3d"><u>PELICULAS 3D</u></a></li>
+                </ul>
+                <ul>
+                    <li><a href="insertar link de peliculas 4d"><u>PELICULAS 4D</u></a></li>
+                    <li><a href="insertar link de peliculas xd"><u>PELICULAS XD</u></a></li>
+                    <li><a href="insertar link de peliculas dbox"><u>PELICULAS DBOX</u></a></li>
+                    <li><a href="insertar link de premium class"><u>PREMIUM CLASS</u></a></li>
+                    <li><a href="insertar link de comfort"><u>COMFORT</u></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-item footer-cinema">
+            <h3 class="footer-title">CINEMA</h3>
+            <div class="social-icons">
+                <div class="social-icon">
+                    <a href="insertar link de facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="social-icon">
+                    <a href="insertar link de twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="social-icon">
+                    <a href="insertar link de instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-legal" style="background-color: var(--colorGrisOscuro);">
+        <p class="footer-paragraph" style="font-weight: bold;">Dirección General de Defensa y Protección al Consumidor:<br>
+        Para consultas y/o denuncias haga click aquí</p>
+        <button class="footer-button" style="background-color: var(--colorAmarillo); color: var(--colorNegro); font-weight: bold; border-radius: 5px;">BOTÓN DE ARREPENTIMIENTO</button>
+    </div>
+</footer>
+</body>
+</html>
