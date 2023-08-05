@@ -1,0 +1,409 @@
+.carga-main {
+    margin: 2rem 2rem 5rem 2rem;
+}
+
+.carga-main h1 {
+    text-align: center;
+    color: white;
+}
+
+.contenedor-imagen-detalle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.description-pelicula label {
+    color: white;
+    font-weight: bold;
+}
+
+.description-pelicula input:focus,
+select:focus {
+    outline: none;
+}
+
+.imagen-triller {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-triller label {
+    color: white;
+    font-weight: bold;
+}
+
+.sinopsis-edades label {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.description-pelicula {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 2rem 0rem;
+}
+
+.description-pelicula input {
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 0.5rem 0rem;
+}
+
+
+.sinopsis-edades {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.sinopsis-edades textarea:focus{
+ outline: none;
+}
+
+.edades-genero {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.edades-genero select {
+    font-size: 1rem;
+    width: 100%;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.sinopsis-edades textarea {
+    height: 100px;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.sinopsis-edades button{
+    background-color: var(--colorAmarillo);
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 0.5rem 0rem;
+    width: 53%;
+font-weight: bold;
+}
+
+
+.div-file1 {
+    position: relative;
+    padding: 10px;
+    width: 124%;
+    height: 189px;
+    background-image: url(../img/cargar-imagen.jpg);
+    border-radius: 0.5rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.div-file {
+    position: relative;
+    padding: 10px;
+    width: 150px;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+
+
+
+#imageUpload {
+    position: absolute;
+    top: 8px;
+    width: 89%;
+    height: 190px;
+    opacity: 0;
+}
+
+
+
+#triler {
+    position: absolute;
+    top: 8px;
+    width: 88%;
+    height: 31px;
+    opacity: 0;
+}
+
+.texto {
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+
+@media (width>480px) and (width<1024px) {
+    .carga-main {
+        margin: 0;
+    }
+
+    .contenedor-imagen-detalle {
+
+        display: flex;
+        gap: 26px;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .carga-main h1 {
+        text-align: center;
+        color: white;
+    }
+
+    .carga-main form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: space-around;
+    }
+
+
+    .imagen-triller {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .description-pelicula {
+        display: flex;
+        flex-direction: column;
+        width: 46%;
+    }
+
+    .description-pelicula input {
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        border: none;
+        margin: 0.5rem 0rem;
+    }
+
+
+    .sinopsis-edades {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 29px;
+        margin-bottom: 5rem;
+    }
+
+    .edades-genero {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .sinopsis-edades textarea {
+        height: 135px;
+        margin-bottom: 1rem;
+    }
+
+    .sinopsis-edades button {
+        background-color: var(--colorAmarillo);
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        width: 50%;
+        font-size: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+
+    .div-file1 {
+        position: relative;
+        padding: 10px;
+        width: 114%;
+        background-image: url(../img/cargar-imagen.jpg);
+        border-radius: 0.5rem;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .div-file {
+        position: relative;
+        padding: 10px;
+        width: 150px;
+        background-color: white;
+        border-radius: 0.5rem;
+    }
+
+
+    #imageUpload {
+        position: absolute;
+        top: 23px;
+        width: 90%;
+        height: 162px;
+        opacity: 0;
+    }
+
+
+
+    #triler {
+        position: absolute;
+        top: 8px;
+        width: 86%;
+        opacity: 0;
+    }
+
+    .texto {
+        text-align: center;
+        margin: 0;
+
+    }
+
+}
+
+
+
+
+@media (width>1024px) {
+    .carga-main {
+        margin: 0;
+    }
+
+    .contenedor-imagen-detalle {
+
+        display: flex;
+        gap: 26px;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .carga-main h1 {
+        text-align: center;
+        color: white;
+    }
+
+    .carga-main form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: space-around;
+    }
+
+
+    .imagen-triller {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .description-pelicula {
+        display: flex;
+        flex-direction: column;
+        width: 46%;
+    }
+
+    .description-pelicula input {
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        border: none;
+        margin: 0.5rem 0rem;
+    }
+
+
+    .sinopsis-edades {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 29px;
+        margin-bottom: 5rem;
+    }
+
+    .edades-genero {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .sinopsis-edades textarea {
+        margin-bottom: 1rem;
+        height: 200px;
+        font-size: 1rem;
+    }
+
+    .sinopsis-edades button {
+        background-color: var(--colorAmarillo);
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 2rem;
+        width: 27%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+
+    .div-file1 {
+        position: relative;
+        padding: 10px;
+        width: 105%;
+        background-image: url(../img/cargar-imagen.jpg);
+        border-radius: 0.5rem;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .div-file {
+        position: relative;
+        padding: 10px;
+        width: 150px;
+        background-color: white;
+        border-radius: 0.5rem;
+    }
+
+
+    #imageUpload {
+        position: absolute;
+        top: 23px;
+        width: 90%;
+        height: 162px;
+        opacity: 0;
+    }
+
+
+
+    #triler {
+        position: absolute;
+        top: 8px;
+        width: 86%;
+        opacity: 0;
+    }
+
+    .texto {
+        text-align: center;
+        margin: 0;
+
+    }
+
+}

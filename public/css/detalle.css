@@ -1,0 +1,128 @@
+
+.detalle-main {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.detalle-main-section1 {
+    display: flex;
+    flex-grow: 1;
+    gap: 20px
+}
+
+.detalle-main-section1 img {
+    width: 100%;
+}
+
+.detalle-main-section1-cartelera-texto .genero-edades h3{
+    color: white;
+}
+
+.detalle-main-section1-video-texto iframe {
+    width: 100%;
+    height: 50%;
+}
+
+.detalle-main-section1-video-texto p{
+    color: white;
+}
+
+.detalle-main-section {
+    margin-top: 2rem;
+}
+
+.detalle-main-section-botones {
+    display: flex;
+}
+
+.detalle-main-section-botones button {
+    width: 50%;
+    background-color: var(--colorAmarillo);
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.detalle-main-section-botones button:first-child {
+    width: 50%;
+    margin-right: 1rem;
+}
+
+.detalle-main-section-fecha {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.detalle-main-section-fecha div {
+    flex-grow: 1;
+    margin: 0.2rem;
+    padding: 0.1rem;
+    background-color: var(--colorAmarillo);
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.detalle-main-section-fecha div p {
+    font-size: 0.8rem;
+    margin: 0rem;
+}
+
+.detalle-main-section-pelicula {
+    background-color: white;
+}
+
+.detalle-main-section-pelicula h3{
+    margin-left: 0.5rem;
+    padding-top: 1rem;
+    text-transform: uppercase;
+}
+
+.detalle-main-section-pelicula-horarios {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.detalle-main-section-pelicula-horarios p{
+    padding: 0.2rem;
+    margin: 0rem;
+    border-radius: 0.5rem;
+}
+
+.detalle-main-section-pelicula-horarios p:nth-child(3n+1) {
+    background-color:  #f3c41c ;
+  }
+  
+  .detalle-main-section-pelicula-horarios p:nth-child(3n+2) {
+    background-color:  #94f318 ;
+  }
+  
+  .detalle-main-section-pelicula-horarios p:nth-child(3n+3) {
+    background-color:  #ed501a;
+  }
+
+  @media (width>1024px) {
+    .detalle-main {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .detalle-main-section {
+        margin-top: 0rem;
+        width: 50%;
+    }
+    
+    .detalle-main-section1{
+        width: 70%;
+    }
+    .detalle-main-section1-cartelera-texto .genero-edades img{
+        width: 115px;
+    }
+  
+  }

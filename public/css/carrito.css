@@ -1,0 +1,144 @@
+.carrito-main{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.contenedor-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 2rem;
+}
+
+
+.contenedor-main-tarjetas{
+    flex: 1 1 45%;
+    background-color: lightgrey;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+}
+
+.contenedor-main-tarjetas .tarjeta{
+    display: flex;
+    align-items: stretch;
+}
+
+.contenedor-main-tarjetas h2{
+    text-transform: uppercase;
+}
+
+
+.contenedor-main-tarjetas .tarjeta .contenido{
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+
+}
+
+.contenedor-main-tarjetas .tarjeta .contenido h3{
+    background-color: var(--colorAmarillo);
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.2rem;
+    margin-top: 0rem;
+}
+
+
+.contenedor-main-tarjetas .centrar{
+    padding:  0rem 2rem 6rem 2rem;
+}
+
+.contenedor-main-tarjetas .tarjeta .precio {
+    background-color: var(--colorGrisOscuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    padding: 0rem 0.5rem;
+}
+
+
+/*TICKET*/
+
+
+.main-contenedor-ticket {
+    flex: 1 1 45%;
+    background-image: url('/img/fondo-ticket.jpg');
+    background-size: contain;
+    background-repeat: repeat-x;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.main-contenedor-ticket .imagen-texto{
+    display: flex;
+    border-bottom: solid 1px black;
+   padding-bottom: 1rem;
+}
+
+.main-contenedor-ticket-contenido{
+    padding: 3rem;
+}
+
+.main-contenedor-ticket-contenido img{
+    margin-right: 1rem;
+
+}
+
+.main-contenedor-ticket-contenido-precios .precios{
+    display: flex;
+    justify-content: space-between
+}
+
+.carrito-main-botones{
+    margin-top: 2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.carrito-main-botones button{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: white;
+    margin-right: 1rem;
+    
+ }
+
+ .carrito-main button.centrar {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--colorAmarillo);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.carrito-main{
+    padding-bottom: 5rem;
+    
+}
+
+
+@media (max-width: 768px) {
+    .contenedor-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-main-tarjetas,
+    .main-contenedor-ticket {
+        flex-basis: 100%;
+    }
+    
+
+}

@@ -1,0 +1,52 @@
+.editar-main h1{
+color: white;
+text-align: center;
+margin-bottom: 2rem;
+}
+
+.filtro-editar{
+color: white;
+font-size: 2rem;
+margin: 2rem 0rem;
+}
+
+.filtro-editar select{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+.sinopsis-edadess textarea {
+    height: 132px;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.sinopsis-edadess button{
+    background-color: var(--colorAmarillo);
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+}
+
+.sinopsis-edadess {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    margin: 0 auto;
+}
+
+
+.sinopsis-edadess textarea:focus{
+ outline: none;
+}
+
+.sinopsis-edadess label{
+    color: white;
+}

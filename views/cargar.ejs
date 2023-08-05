@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+
+    <body>
+        <%- include('partials/header') %>
+
+            <main class="carga-main">
+                <h1>Carga de peliculas</h1>
+
+                <form action="" method="post">
+
+                    <div class="contenedor-imagen-detalle">
+                        <div class="imagen-triller">
+
+                            <label for="imageUpload">Imagen cartelera</label>
+                            <div class="div-file1">
+                                <input type="file" id="imageUpload" name="image" accept=".jpg, .jpeg, .png">
+                            </div>
+
+                            <label for="triler">Triler</label>
+                            <div class="div-file">
+                                <p class="texto">Select File</p>
+                                <input type="file" name="triler" id="triler" accept=".mp4">
+                            </div>
+                        </div>
+
+                        <div class="description-pelicula">
+                            <label for="nombre">Nombre de la pelicula</label>
+                            <input type="text" name="nombre" id="nombre" required>
+
+                            <label for="fecha">Fecha de Lanzamiento</label >
+                            <input type="date" name="fecha" id="fecha" required>
+
+                            <label for="duracion">Tiempo de duracion</label>
+                            <input type="text" name="duracion" id="duracion" required>
+
+                            <label for="actores">Actores</label>
+                            <input type="text" name="actores" id="actores" required>
+
+                            <label for="director">Director</label>
+                            <input type="text" name="director" id="director" required>
+
+                            <label for="precio">Precio</label>
+                            <input type="text" name="precio" id="precio" required>
+                        </div>
+
+                    </div>
+
+                    <div class="sinopsis-edades">
+
+                        <div class="edades-genero">
+
+
+
+                            <select name="edades" id="edades" required>
+                                <option value="">Edades</option>
+                                <option value="+10">+10</option>
+                                <option value="+15">+15</option>
+                                <option value="+18">+18</option>
+                            </select>
+
+
+
+                            <select name="genero" id="genero" required>
+                                <option value="">Genero</option>
+                                <option value="accion">Accion</option>
+                                <option value="comedia">Comedia</option>
+                                <option value="drama">Drama</option>
+                                <option value="suspenso">Suspenso</option>
+                                <option value="crimen">Crimen</option>
+                                <option value="romance">Romance</option>
+                                <option value="aventura">Aventura</option>
+                                <option value="terror">Terror</option>
+                                <option value="musicales">Musicales</option>
+                                <option value="cienciaFicción">Ciencia ficción</option>
+                                <option value="guerra">Guerra</option>
+                            </select>
+                        </div>
+
+                        <label for="sinopsis">Sinopsis</label>
+                        <textarea id="sinopsis" name="sinopsis" required></textarea>
+                        <button type="submit">Agregar</button>
+                    </div>
+
+
+                </form>
+
+            </main>
+            <%- include('partials/footer') %>
+    </body>
+
+
+</html>

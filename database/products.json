@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Caca",
+    "fecha": "2023-08-11",
+    "duracion": "sdasd",
+    "actores": "dsadsad",
+    "director": "dasdsa",
+    "precio": "sdasdsa",
+    "genero": "comedia",
+    "edades": "+15",
+    "sinopsis": "dasdsadasd"
+  },
+  {
+    "nombre": "Avatar",
+    "fecha": "2023-08-17",
+    "duracion": "2 horas 42 minutos",
+    "actores": "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang",
+    "director": "James Cameron",
+    "precio": "19.99 USD",
+    "genero": "Acción, Aventura, Ciencia ficción",
+    "edades": "+13",
+    "sinopsis": "En el año 2154, los humanos están agotando los recursos naturales de la Tierra. Para extraer un valioso mineral de un lejano planeta llamado Pandora, se utilizan avatares, cuerpos biológicamente modificados controlados por la mente humana. Jake Sully, un exmarine parapléjico, es enviado a Pandora y se encuentra dividido entre su lealtad a la empresa y la protección del mundo al que ahora pertenece."
+  },
+  {},
+  {}
+]

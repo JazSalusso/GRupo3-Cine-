@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+
+  <main class="login-content">
+    <!-- Columna de la izquierda -->
+    <div class="columna-izquierda">
+        <!-- Título "Ingresa a tu cuenta" -->
+        <h2 class="titulo-ingreso">INGRESA A TU CUENTA</h2>
+
+        <!-- Grupo de usuario -->
+        <div class="grupo-usuario">
+            <h3 class="subtitulo-usuario">USUARIO</h3>
+            <!-- Formulario para el usuario -->
+            <form class="formulario-usuario">
+                <!-- Campos del formulario para el usuario -->
+                <!-- Input para el usuario -->
+                <input type="text" placeholder="Usuario" required>
+            </form>
+        </div>
+
+        <!-- Grupo de contraseña -->
+        <div class="grupo-contrasena">
+            <h3 class="subtitulo-contrasena">CONTRASEÑA</h3>
+            <!-- Formulario para la contraseña -->
+            <form class="formulario-contrasena">
+                <!-- Campos del formulario para la contraseña -->
+                <!-- Input para la contraseña -->
+                <input type="password" placeholder="Contraseña" required>
+            </form>
+        </div>
+
+        <!-- Botón "INGRESAR" -->
+        <button class="boton-ingresar">INGRESAR</button>
+
+        <!-- Título "OLVIDE MI CONTRASEÑA" -->
+        <h2 class="titulo-olvide">OLVIDE MI CONTRASEÑA</h2>
+    </div>
+
+    <!-- Columna del medio (Separador en vertical) -->
+    <div class="columna-medio">
+        <hr class="separador">
+    </div>
+
+    <!-- Columna de la derecha -->
+    <div class="columna-derecha">
+        <!-- Título "¿NO TENES CUENTA?" -->
+        <h2 class="titulo-no-tienes">¿NO TENES CUENTA?</h2>
+
+        <!-- Botón "CREAR CUENTA" -->
+        <button class="boton-crear-cuenta">CREAR CUENTA</button>
+    </div>
+
+    <div class="publicidad">
+        <a href="insertar link del mapa"><img src="/img/placeholder.png" alt="Map Image"></a>
+    </div>
+</main>
+
+
+
+<%- include('partials/footer') %>
+</body>
+</html>
+
+
