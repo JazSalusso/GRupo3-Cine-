@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('partials/head') %>
+    <%- include('partials/head',{
+        title : 'EDITAR'
+    }) %>
 
     <body>
         <%- include('partials/header') %>
@@ -11,7 +13,7 @@
 
 
                 <div class="filtro-editar">
-                    <form action="/products/editar" method="POST">
+                    <form action="/products/editar?_method=PUT" method="POST">
                         <label for="pelicula">Selecciona una película:</label>
                         <select id="pelicula" name="nombre">
                             <% peliculas.forEach((pelicula)=> { %>

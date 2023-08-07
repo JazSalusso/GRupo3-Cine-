@@ -1,37 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('partials/head') %>
+    <%- include('partials/head', {
+        title : 'HOME'
+    }) %>
 <body>
     <%- include('partials/header') %>
       
     <main class="main_home">
         <div class="main_home_banner">
-          <img src="/img/banner.jpg" alt="">
-       </div>
-        <div class=main_home_cartelera>
-            <img src="img/homecoming.webp" alt="Película 1">
-            <img src="/img/nowayhome.jpeg" alt="Película 2">
-            <img src="img/homecoming.webp" alt="Película 3">
-            <img src="/img/spiderverso.jpg" alt="Película 4">
-
-            </div>
-            <h4>Estrenos</h4>
-        <div class="main_home_estrenos">
-            <img src="img/homecoming.webp" alt="Película 1">
-            <img src="/img/nowayhome.jpeg" alt="Película 2">
-            <img src="img/homecoming.webp" alt="Película 3">
-            <img src="/img/spiderverso.jpg" alt="Película 4">
-            </div>
-            <h4>Proximos Estrenos</h4>
-            <div class="main_home_pestrenos">
-            <img src="img/homecoming.webp" alt="Película 3">
-            <img src="/img/spiderverso.jpg" alt="Película 4">
-            <img src="img/homecoming.webp" alt="Película 3">
-            <img src="/img/spiderverso.jpg" alt="Película 4">
-            </div>
+            <img src="/img/banner.jpg" alt="">
         </div>
-
+        <div class="main_home_cartelera">
+            <% peliculas.forEach(pelicula => { %>
+            <img src="/img/<%= pelicula.image %>" alt="<%= pelicula.nombre %>">
+            <% }) %>
+        </div>
+        <h4>Estrenos</h4>
+        <div class="main_home_estrenos">
+            <% peliculas.forEach(pelicula => { %>
+            <img src="/img/<%= pelicula.image %>" alt="<%= pelicula.nombre %>">
+            <% }) %>
+        </div>
+        <h4>Proximos Estrenos</h4>
+        <div class="main_home_pestrenos">
+            <% peliculas.forEach(pelicula => { %>
+            <img src="/img/<%= pelicula.image %>" alt="<%= pelicula.nombre %>">
+            <% }) %>
+        </div>
     </main>
+    
+    
     <%- include('partials/footer') %>
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Obtener la cantidad total de películas para establecer slidesToShow
+        var totalPeliculas = <%= peliculas.length %>;
+
+        // Inicializar el carrusel de la sección "Cartelera"
+        new Glider(document.querySelector('.main_home_cartelera'), {
+            slidesToShow: totalPeliculas, // Establecer slidesToShow al total de películas
+            slidesToScroll: 1,
+            draggable: true,
+            dots: '.dots-cartelera',
+            arrows: {
+                prev: '.glider-prev-cartelera',
+                next: '.glider-next-cartelera'
+            }
+        });
+
+        // Inicializar el carrusel de la sección "Estrenos"
+        new Glider(document.querySelector('.main_home_estrenos'), {
+            slidesToShow: totalPeliculas, // Establecer slidesToShow al total de películas
+            slidesToScroll: 1,
+            draggable: true,
+            dots: '.dots-estrenos',
+            arrows: {
+                prev: '.glider-prev-estrenos',
+                next: '.glider-next-estrenos'
+            }
+        });
+
+        // Inicializar el carrusel de la sección "Próximos Estrenos"
+        new Glider(document.querySelector('.main_home_pestrenos'), {
+            slidesToShow: totalPeliculas, // Establecer slidesToShow al total de películas
+            slidesToScroll: 1,
+            draggable: true,
+            dots: '.dots-pestrenos',
+            arrows: {
+                prev: '.glider-prev-pestrenos',
+                next: '.glider-next-pestrenos'
+            }
+        });
+    });
+</script>
+
 </html>

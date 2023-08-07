@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('partials/head') %>
+    <%- include('partials/head',{
+        title : 'CARGAR'
+    }) %>
 
     <body>
         <%- include('partials/header') %>
@@ -8,7 +10,7 @@
             <main class="carga-main">
                 <h1>Carga de peliculas</h1>
 
-                <form action="" method="post">
+                <form action="/products/cargar" method="post">
 
                     <div class="contenedor-imagen-detalle">
                         <div class="imagen-triller">
@@ -80,10 +82,10 @@
 
                         <label for="sinopsis">Sinopsis</label>
                         <textarea id="sinopsis" name="sinopsis" required></textarea>
-                        <button type="submit">Agregar</button>
+                        <button type="submit">Enviar</button>
                     </div>
 
-
+               
                 </form>
 
             </main>

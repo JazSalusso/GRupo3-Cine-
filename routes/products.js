@@ -2,21 +2,13 @@ var express = require('express');
 var router = express.Router();
 const productsController = require("../controllers/productsController");
 
-
+router.get('/cargar', productsController.cargarMostrar);
 router.post('/cargar', productsController.cargar);
-router.get('/cargar', productsController.cargar);
 
-router.get('/editar', productsController.editar);
-router.post('/editar', productsController.editar);
+router.get('/editar', productsController.editarMostrar);
+router.put('/editar', productsController.editar);
 
-router.get('/detalle', function(req, res, next) {
-    res.render('detalle');
-  });
-
-router.get('/carrito', function(req, res, next) {
-    res.render('carrito');
-  });
-
-
+router.get('/detalle',productsController.detalle);
+router.get('/carrito', productsController.carrito);
   
 module.exports = router;
