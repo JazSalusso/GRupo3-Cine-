@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head', { title: pelicula.nombre }) %>
+<body>
+  <%- include('partials/header') %>
+
+  <main class="main_pelicula_detalle">
+    <div class="pelicula_detalle">
+      <h1><%= pelicula.nombre %></h1>
+      <img src="/img/<%= pelicula.image %>" alt="<%= pelicula.nombre %>">
+      <p><strong>Fecha de estreno:</strong> <%= pelicula.fecha %></p>
+      <p><strong>Duración:</strong> <%= pelicula.duracion %></p>
+      <p><strong>Actores:</strong> <%= pelicula.actores %></p>
+      <p><strong>Director:</strong> <%= pelicula.director %></p>
+      <p><strong>Precio:</strong> <%= pelicula.precio %></p>
+      <p><strong>Género:</strong> <%= pelicula.genero %></p>
+      <p><strong>Edades:</strong> <%= pelicula.edades %></p>
+      <p><strong>Sinopsis:</strong> <%= pelicula.sinopsis %></p>
+    </div>
+  </main>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

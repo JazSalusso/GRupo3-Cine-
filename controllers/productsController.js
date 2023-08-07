@@ -1,5 +1,5 @@
 const fs = require('fs');
-const products = require('../database/products.json');
+const products = require('../data/products.json');
 
 module.exports = {
     cargar: (req, res) => {
@@ -33,7 +33,7 @@ module.exports = {
         products.push(nuevoProducto);
         
         // Guardar los datos actualizados en el archivo JSON
-        fs.writeFileSync('database/products.json', JSON.stringify(products, null, 2));
+        fs.writeFileSync('data/products.json', JSON.stringify(products, null, 2));
 
         res.redirect('/products/carga');
     },
@@ -68,7 +68,7 @@ module.exports = {
         peliculaAEditar.sinopsis = sinopsis;
     
         // Guardar los datos actualizados en el archivo JSON
-        fs.writeFileSync('database/products.json', JSON.stringify(products, null, 2));
+        fs.writeFileSync('data/products.json', JSON.stringify(products, null, 2));
     
         // Redireccionar a la página de edición (o cualquier otra página que desees)
         res.redirect('/products/editar');
