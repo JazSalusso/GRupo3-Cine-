@@ -11,7 +11,7 @@ exports.mostrarPeliculaDetalle = (req, res) => {
   const pelicula = peliculasData.find((pelicula) => pelicula.id === peliculaId); 
 
   if (!pelicula) {
-  
+    // Si la película no se encuentra, mostrar un mensaje de error o redireccionar a una página de error
     return res.status(404).send('Película no encontrada');
   }
 

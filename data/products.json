@@ -130,3 +130,135 @@
     "image": "interstellar.jpg"
   }
 ]
+=======
+    {
+      "id": 1,
+      "nombre": "Avatar",
+      "fecha": "2023-08-17",
+      "duracion": "2 horas 42 minutos",
+      "actores": "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang",
+      "director": "James Cameron",
+      "precio": "19.99 USD",
+      "genero": "Acción, Aventura, Ciencia ficción",
+      "edades": "+13",
+      "sinopsis": "En el año 2154, los humanos están agotando los recursos naturales de la Tierra. Para extraer un valioso mineral de un lejano planeta llamado Pandora, se utilizan avatares, cuerpos biológicamente modificados controlados por la mente humana. Jake Sully, un exmarine parapléjico, es enviado a Pandora y se encuentra dividido entre su lealtad a la empresa y la protección del mundo al que ahora pertenece.",
+      "image": "avatar.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "El Padrino",
+      "fecha": "1972-03-14",
+      "duracion": "2 horas 55 minutos",
+      "actores": "Marlon Brando, Al Pacino, James Caan, Robert Duvall",
+      "director": "Francis Ford Coppola",
+      "precio": "17.99 USD",
+      "genero": "Crimen, Drama",
+      "edades": "+18",
+      "sinopsis": "El patriarca de una familia mafiosa transfiere el control de su imperio clandestino a su hijo renuente.",
+      "image": "el_padrino.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Inception",
+      "fecha": "2010-07-16",
+      "duracion": "2 horas 28 minutos",
+      "actores": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page, Tom Hardy",
+      "director": "Christopher Nolan",
+      "precio": "21.99 USD",
+      "genero": "Acción, Aventura, Sci-Fi",
+      "edades": "+13",
+      "sinopsis": "Un ladrón talentoso, especializado en el robo de secretos valiosos en el subconsciente durante el estado de sueño, recibe la tarea inversa de plantar una idea en la mente de un CEO.",
+      "image": "inception.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Avengers: Endgame",
+      "fecha": "2019-04-26",
+      "duracion": "3 horas 1 minuto",
+      "actores": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
+      "director": "Anthony Russo, Joe Russo",
+      "precio": "24.99 USD",
+      "genero": "Acción, Aventura, Fantasía",
+      "edades": "+13",
+      "sinopsis": "Después de los devastadores eventos de Avengers: Infinity War, los Vengadores restantes se reúnen una vez más para revertir las acciones de Thanos y restaurar el equilibrio del universo.",
+      "image": "avengers_endgame.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "El Señor de los Anillos: El retorno del rey",
+      "fecha": "2003-12-17",
+      "duracion": "3 horas 21 minutos",
+      "actores": "Elijah Wood, Ian McKellen, Viggo Mortensen, Orlando Bloom",
+      "director": "Peter Jackson",
+      "precio": "22.99 USD",
+      "genero": "Acción, Aventura, Fantasía",
+      "edades": "+13",
+      "sinopsis": "Gandalf y Aragorn lideran el Mundo de los Hombres contra el ejército de Sauron para atraer el ojo de Sauron de Frodo y Sam mientras intentan destruir el Anillo Único para siempre.",
+      "image": "el_senor_de_los_anillos_el_retorno_del_rey.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Forrest Gump",
+      "fecha": "1994-07-06",
+      "duracion": "2 horas 22 minutos",
+      "actores": "Tom Hanks, Robin Wright, Gary Sinise",
+      "director": "Robert Zemeckis",
+      "precio": "18.99 USD",
+      "genero": "Comedia, Drama, Romance",
+      "edades": "+13",
+      "sinopsis": "Forrest Gump, un hombre con un coeficiente intelectual por debajo de la media, participa en varios eventos importantes de la historia de Estados Unidos durante varias décadas.",
+      "image": "forrest_gump.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "The Shawshank Redemption",
+      "fecha": "1994-09-23",
+      "duracion": "2 horas 22 minutos",
+      "actores": "Tim Robbins, Morgan Freeman, Bob Gunton",
+      "director": "Frank Darabont",
+      "precio": "19.99 USD",
+      "genero": "Drama",
+      "edades": "+18",
+      "sinopsis": "Andy Dufresne, un banquero condenado por el asesinato de su esposa e amante, encuentra esperanza en la cárcel a través de su amistad con un compañero preso y su habilidad para negociar favores para los guardias y prisioneros.",
+      "image": "shawshank_redemption.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "The Dark Knight",
+      "fecha": "2008-07-18",
+      "duracion": "2 horas 32 minutos",
+      "actores": "Christian Bale, Heath Ledger, Aaron Eckhart",
+      "director": "Christopher Nolan",
+      "precio": "21.99 USD",
+      "genero": "Acción, Drama, Crimen",
+      "edades": "+13",
+      "sinopsis": "Cuando el Joker, un criminal psicópata, siembra el caos y la destrucción en Gotham, Batman se ve obligado a enfrentar uno de los mayores desafíos de su carrera como protector de la ciudad.",
+      "image": "dark_knight.jpg"
+    },
+    {
+      "id": 9,
+      "nombre": "The Godfather Part II",
+      "fecha": "1974-12-20",
+      "duracion": "3 horas 22 minutos",
+      "actores": "Al Pacino, Robert De Niro, Robert Duvall",
+      "director": "Francis Ford Coppola",
+      "precio": "23.99 USD",
+      "genero": "Crimen, Drama",
+      "edades": "+18",
+      "sinopsis": "La saga de la familia Corleone continúa mientras la vida de Michael Corleone, el nuevo jefe del sindicato criminal, se entrelaza con la historia del ascenso de su padre, Vito Corleone, desde inmigrante pobre hasta poderoso jefe de la mafia.",
+      "image": "godfather_part_ii.jpg"
+    },
+    {
+      "id": 10,
+      "nombre": "Interstellar",
+      "fecha": "2014-11-07",
+      "duracion": "2 horas 49 minutos",
+      "actores": "Matthew McConaughey, Anne Hathaway, Jessica Chastain",
+      "director": "Christopher Nolan",
+      "precio": "20.99 USD",
+      "genero": "Aventura, Drama, Sci-Fi",
+      "edades": "+13",
+      "sinopsis": "Un grupo de astronautas es enviado a través de un agujero de gusano recién descubierto para encontrar un nuevo hogar para la humanidad mientras la Tierra se enfrenta a una crisis ambiental y agrícola.",
+      "image": "interstellar.jpg"
+    }
+  ]
