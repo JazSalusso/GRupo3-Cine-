@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head',{
+        title : 'EDITAR'
+    }) %>
+
+    <body>
+        <%- include('partials/header') %>
+
+
+            <main class="editar-main">
+                <h1>Editar Película</h1>
+
+
+                <div class="filtro-editar">
+                    <form action="/products/editar?_method=PUT" method="POST">
+                        <label for="pelicula">Selecciona una película:</label>
+                        <select id="pelicula" name="nombre">
+                            <% peliculas.forEach((pelicula)=> { %>
+                                <option value="<%= pelicula.nombre %>">
+                                    <%= pelicula.nombre %>
+                                </option>
+                                <% }) %>
+                        </select>
+                </div>
+
+
+                <div class="contenedor-imagen-detalle">
+                    <div class="imagen-triller">
+                        <label for="imageUpload">Imagen cartelera</label>
+                        <div class="div-file1">
+                            <input type="file" id="imageUpload" name="image" accept=".jpg, .jpeg, .png">
+                        </div>
+
+                        <label for="triler">Triler</label>
+                        <div class="div-file">
+                            <p class="texto">Select File</p>
+                            <input type="file" name="triler" id="triler" accept=".mp4">
+                        </div>
+                    </div>
+
+                    <div class="description-pelicula">
+                        <label for="nuevoNombre">Nuevo nombre:</label>
+                        <input type="text" id="nuevoNombre" name="nuevoNombre" required>
+
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+
+                        <label for="duracion">Duración:</label>
+                        <input type="text" id="duracion" name="duracion" required>
+
+                        <label for="actores">Actores:</label>
+                        <input type="text" id="actores" name="actores" required>
+
+                        <label for="director">Director:</label>
+                        <input type="text" id="director" name="director" required>
+
+                        <label for="precio">Precio:</label>
+                        <input type="text" id="precio" name="precio" required>
+
+                    </div>
+                </div>
+
+                <div class="sinopsis-edadess">
+
+                    <div class="edades-genero">
+                        <select name="edades" id="edades" required>
+                            <option value="">Edades</option>
+                            <option value="+10">+10</option>
+                            <option value="+15">+15</option>
+                            <option value="+18">+18</option>
+                        </select>
+
+
+
+                        <select name="genero" id="genero" required>
+                            <option value="">Genero</option>
+                            <option value="accion">Accion</option>
+                            <option value="comedia">Comedia</option>
+                            <option value="drama">Drama</option>
+                            <option value="suspenso">Suspenso</option>
+                            <option value="crimen">Crimen</option>
+                            <option value="romance">Romance</option>
+                            <option value="aventura">Aventura</option>
+                            <option value="terror">Terror</option>
+                            <option value="musicales">Musicales</option>
+                            <option value="cienciaFicción">Ciencia ficción</option>
+                            <option value="guerra">Guerra</option>
+                        </select>
+                    </div>
+
+                    <label for="sinopsis">Sinopsis:</label>
+                    <textarea id="sinopsis" name="sinopsis"  required></textarea>
+
+                    <button type="submit">Guardar cambios</button>
+
+                </div>
+
+                </form>
+
+            </main>
+            <%- include('partials/footer') %>
+
+
+            
+    </body>
+
+
+</html>

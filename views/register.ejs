@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head',{
+  title : 'REGISTRO'
+}) %>
+<body>
+  <%- include('partials/header') %>
+
+  <main class="registration-content">
+    <div class="container">
+      <h2 class="titulo-registro">REGISTRATE Y CREA UN NUEVO USUARIO</h2>
+      <form>
+        <!-- Grupo 1 -->
+        <div class="form-group form-group-inline">
+          <div class="form-item">
+            <h3>Nombre</h3>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+          </div>
+          <div class="form-item">
+            <h3>Apellido</h3>
+            <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" required>
+          </div>
+        </div>
+  
+        <!-- Grupo 2 -->
+        <div class="form-group">
+          <h3>Email</h3>
+          <input type="email" class="form-control" id="email" placeholder="Ingrese su email" required>
+        </div>
+  
+        <!-- Grupo 3 -->
+        <div class="form-group form-group-inline">
+          <div class="form-item">
+            <h3>Contraseña</h3>
+            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
+          </div>
+          <div class="form-item">
+            <h3>Confirmar Contraseña</h3>
+            <input type="password" class="form-control" id="confirmar-password" placeholder="Confirme su contraseña" required>
+          </div>
+        </div>
+  
+        <!-- Grupo 4 -->
+        <div class="form-group form-group-inline">
+          <div class="form-item">
+            <h3>Fecha de Nacimiento</h3>
+            <input type="date" class="form-control" id="fecha-nacimiento" required>
+          </div>
+          <div class="form-item">
+            <h3>Género</h3>
+            <select class="form-control" id="genero" required>
+              <option value="">Seleccione su género</option>
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+        </div>
+  
+        <!-- Grupo 5 -->
+        <div class="form-group form-group-inline">
+          <div class="form-item">
+            <h3>Celular</h3>
+            <input type="text" class="form-control" id="celular" placeholder="Ingrese su número de celular" required>
+          </div>
+          <div class="form-item">
+            <h3>Complejo Habitual</h3>
+            <input type="text" class="form-control" id="complejo-habitual" placeholder="Ingrese su complejo habitual" required>
+          </div>
+        </div>
+  
+        <!-- Botón de registro -->
+        <button type="submit" class="btn btn-primary">Registrarme</button>
+      </form>
+    </div>
+  </main>
+  
+  
+  
+
+  <%- include('partials/footer') %>
+</body>
+</html>

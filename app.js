@@ -1,52 +1,43 @@
-const express = require('express');
-const app = express();
-const path = require('path');
-const port = 3030;
+var createError = require('http-errors');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
+const methodOverride = require('method-override');
 
-//Middleware
-app.use(express.static('public'));
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+var productsRouter = require('./routes/products');
 
-//Rutas
+var app = express();
 
-app.get('/',(req,res)=>{
-    res.sendFile(path.join(__dirname, "views", "home.html"))
-})
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
-app.get('/carrito',(req,res)=>{
-    res.sendFile(path.join(__dirname, "views", "carrito.html"))
-})
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(methodOverride('_method'));
 
-app.get('/detalle',(req,res)=>{
-    res.sendFile(path.join(__dirname, "views", "detalle.html"))
-})
-
-app.get('/login',(req,res)=>{
-    res.sendFile(path.join(__dirname, "views", "login.html"))
-})
-
-app.get('/register',(req,res)=>{
-    res.sendFile(path.join(__dirname, "views", "register.html"))
-})
-
-app.get('/carga',(req,res)=>{
-    res.sendFile(path.join(__dirname, "views", "carga.html"))
-})
-
-//rutas para header y footer.html de prueba
-
-app.get('/header', (req, res) => {
-    res.sendFile(path.join(__dirname, "views", "partials", "header.html"));
-  });
-  
-  app.get('/footer', (req, res) => {
-    res.sendFile(path.join(__dirname, "views", "partials", "footer.html"));
-  });
-
-//Server Config
-
-app.listen(port,()=>{
-    console.log(`El servidor esta corriendo en el puerto ${port}`);
-})
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+app.use('/products', productsRouter);
 
 
+app.use(function(req, res, next) {
+  next(createError(404));
+});
 
+
+app.use(function(err, req, res, next) {
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  res.status(err.status || 500);
+  res.render('error');
+});
+
+module.exports = app;

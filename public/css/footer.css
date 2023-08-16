@@ -5,9 +5,12 @@
     background-color: var(--colorGrisClaro);
     color: #000000;
     text-decoration: none;
-    width: 100%; /* Asegurar que el footer ocupe todo el ancho disponible */
-    box-sizing: border-box; /* Incluir padding y bordes en el ancho total */
-    overflow: hidden; /* Evitar el desbordamiento horizontal */
+    width: 100%;
+    /* Asegurar que el footer ocupe todo el ancho disponible */
+    box-sizing: border-box;
+    /* Incluir padding y bordes en el ancho total */
+    overflow: hidden;
+    /* Evitar el desbordamiento horizontal */
 }
 
 
@@ -54,7 +57,7 @@ ul {
     padding: 0;
     margin: 0;
     font-size: 15px;
-    
+
 }
 
 ul li {
@@ -63,7 +66,7 @@ ul li {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-align: left;
-    
+
 }
 
 
@@ -84,9 +87,9 @@ ul li {
     margin-right: 10px;
 }
 
-.social-icon  i {
+.social-icon i {
 
-   color: var(--colorAmarillo);
+    color: var(--colorAmarillo);
 }
 
 .footer-legal {
@@ -130,26 +133,37 @@ a {
 /* Media Query para tablets */
 @media (min-width: 768px) {
     .footer-grid {
-        grid-template-columns: 1fr 1fr 1fr; /* Tres columnas para A, B y C */
-        grid-template-rows: 170px 100px; /* Altura de las filas, según la descripción */
+        grid-template-columns: 1fr 1fr 1fr;
+        /* Tres columnas para A, B y C */
+        grid-template-rows: 170px 100px;
+        /* Altura de las filas, según la descripción */
     }
 
     /* A1 - CINEMA y Redes Sociales */
     .footer-cinema {
-        grid-row: 1 / 3; /* Ocupará dos filas desde la primera hasta la tercera */
-        grid-column: 1 / 2; /* Estará en la primera columna */
-        display: flex; /* Utilizamos flexbox para alinear elementos horizontalmente */
-        flex-direction: column; /* Apilamos los elementos en columna */
-        align-items: center; /* Alinear elementos horizontalmente al centro */
-        justify-content: center; /* Alinear elementos verticalmente al centro */
+        grid-row: 1 / 3;
+        /* Ocupará dos filas desde la primera hasta la tercera */
+        grid-column: 1 / 2;
+        /* Estará en la primera columna */
+        display: flex;
+        /* Utilizamos flexbox para alinear elementos horizontalmente */
+        flex-direction: column;
+        /* Apilamos los elementos en columna */
+        align-items: center;
+        /* Alinear elementos horizontalmente al centro */
+        justify-content: center;
+        /* Alinear elementos verticalmente al centro */
         margin-left: 20px;
     }
 
     /* B1 - CARTELERA y Listas desordenadas */
     .footer-cartelera {
-        grid-row: 1 / 3; /* Ocupará dos filas desde la primera hasta la tercera */
-        grid-column: 2 / 3; /* Estará en la segunda columna */
-        transform: translateX(-30px); /* Ajustamos la posición hacia la izquierda */
+        grid-row: 1 / 3;
+        /* Ocupará dos filas desde la primera hasta la tercera */
+        grid-column: 2 / 3;
+        /* Estará en la segunda columna */
+        transform: translateX(-30px);
+        /* Ajustamos la posición hacia la izquierda */
 
     }
 
@@ -157,37 +171,50 @@ a {
     .footer-image {
         width: 296px;
         height: auto;
-        grid-row: 1 / 3; /* Ocupará dos filas desde la primera hasta la tercera */
-        grid-column: 3 / 4; /* Estará en la tercera columna */
-        display: flex; /* Utilizamos flexbox para alinear elementos horizontalmente */
-        justify-content: flex-end; /* Alinear elemento a la derecha */
-        align-items: center; /* Alinear elemento verticalmente al centro */
+        grid-row: 1 / 3;
+        /* Ocupará dos filas desde la primera hasta la tercera */
+        grid-column: 3 / 4;
+        /* Estará en la tercera columna */
+        display: flex;
+        /* Utilizamos flexbox para alinear elementos horizontalmente */
+        justify-content: flex-end;
+        /* Alinear elemento a la derecha */
+        align-items: center;
+        /* Alinear elemento verticalmente al centro */
     }
 
     /* A2 - Footer Legal */
     .footer-legal {
-        grid-row: 2 / 3; /* Ocupará una fila (a la par del texto) */
-        grid-column: 1 / -1; /* Ocupará todas las columnas disponibles */
-        display: flex; /* Utilizamos flexbox para alinear elementos horizontalmente */
-        align-items: center; /* Alinear elementos verticalmente al centro */
-        justify-content: space-between; /* Espacio entre los elementos */
-        padding: 0 20px; /* Añadimos un espacio interno a los elementos */
+        grid-row: 2 / 3;
+        /* Ocupará una fila (a la par del texto) */
+        grid-column: 1 / -1;
+        /* Ocupará todas las columnas disponibles */
+        display: flex;
+        /* Utilizamos flexbox para alinear elementos horizontalmente */
+        align-items: center;
+        /* Alinear elementos verticalmente al centro */
+        justify-content: space-between;
+        /* Espacio entre los elementos */
+        padding: 0 20px;
+        /* Añadimos un espacio interno a los elementos */
         height: 100px;
     }
 
-    .footer-grid img{
+    .footer-grid img {
         padding-right: 95px;
     }
 
     /* Footer Paragraph */
     .footer-paragraph {
-        margin-bottom: 0; /* Eliminamos el margen inferior para evitar espacio adicional */
+        margin-bottom: 0;
+        /* Eliminamos el margen inferior para evitar espacio adicional */
     }
 
     /* Footer Button */
     .footer-button {
         height: 44px;
-        width: 250px; /* Ajustamos el ancho del botón */
+        width: 250px;
+        /* Ajustamos el ancho del botón */
         background-color: var(--colorAmarillo);
         color: var(--colorNegro);
         font-weight: bold;
@@ -198,7 +225,8 @@ a {
     /* Estilo para evitar división de texto en los elementos de la lista */
     .footer-lists ul li {
         white-space: nowrap;
-        margin-right: 15px; /* Puedes ajustar el valor según la cantidad de espacio deseado entre elementos */
+        margin-right: 15px;
+        /* Puedes ajustar el valor según la cantidad de espacio deseado entre elementos */
 
     }
 }
@@ -206,17 +234,18 @@ a {
 
 /* Media Query para desktop */
 @media (min-width: 1024px) {
+
     /* Estilo para la imagen del footer */
-    .footer-image img{
-        width: 550px;
-        height: 270px;
-        transform: translateX(250px); /* Ajustamos la posición hacia la izquierda */
-        margin-right: 35px
-    }    
+    .footer-image img {
+        width: 449px;
+        height: 266px;
+        transform: translateX(250px);
+        margin-right: 123px;
+    }
 
 
-    .footer-cartelera{
-        margin-bottom: 120px;
+    .footer-cartelera {
+        margin-bottom: 46px;
         margin-right: 70px;
     }
 
@@ -236,33 +265,39 @@ a {
         margin-right: 250px;
         width: 300px;
         height: 50px;
-        transform: translateX(200px); /* Ajustamos la posición hacia la izquierda */
+        transform: translateX(200px);
+        /* Ajustamos la posición hacia la izquierda */
 
     }
 
     /* Ajuste para aumentar el tamaño del texto en toda la página */
     body {
-        font-size: 16px; /* Puedes ajustar el tamaño del texto según lo desees */
+        font-size: 16px;
+        /* Puedes ajustar el tamaño del texto según lo desees */
     }
 
     /* Ajuste para aumentar el tamaño del título de "CARTELERA" */
     .footer-title1 {
-        font-size: 24px; /* Puedes ajustar el tamaño del título según lo desees */
+        font-size: 24px;
+        /* Puedes ajustar el tamaño del título según lo desees */
     }
 
     /* Ajuste para aumentar el tamaño del título de "CINEMA" */
     .footer-title {
-        font-size: 24px; /* Puedes ajustar el tamaño del título según lo desees */
+        font-size: 24px;
+        /* Puedes ajustar el tamaño del título según lo desees */
     }
 
     /* Ajuste para aumentar el tamaño del párrafo en footer-legal */
     .footer-paragraph {
-        font-size: 18px; /* Puedes ajustar el tamaño del párrafo según lo desees */
+        font-size: 18px;
+        /* Puedes ajustar el tamaño del párrafo según lo desees */
         margin-bottom: 15px;
     }
 
     /* Estilo para evitar división de texto en los elementos de la lista en desktop */
     .footer-lists ul li {
-        white-space: normal; /* Cambiar a "normal" para permitir divisiones de texto en desktop */
+        white-space: normal;
+        /* Cambiar a "normal" para permitir divisiones de texto en desktop */
     }
 }
